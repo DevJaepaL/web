@@ -1,0 +1,149 @@
+* {
+	font-family: 'IBM Plex Sans KR';
+	text-indent: 1em;
+	text-align: center;
+	letter-spacing: -0.5px;
+}
+
+h1 { font-size: 40px; }
+
+hr { 
+	border: 2px solid;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	width: 40%; 
+}
+
+section {
+	text-align: center;
+}
+
+.menubar {
+	display: flex;
+	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	align-items: center;
+}
+
+.menubar > nav {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.menubar > nav > a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	padding: 30px 30px;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.menubar > nav > a:hover {
+	color: black;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.profile > img {
+	width: 300px;
+	height: 300px;
+	border-radius: 40%;
+}
+
+.textinfo p {
+	line-height: 60px;
+}
+
+.profile_Box {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	padding: 40px;
+	border: 2px solid gray;
+	border-radius: 10%;
+}
+
+.favoriteList {
+	max-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+ul {font-size: 0;}
+
+ul > li {
+	display: inline-block;
+	vertical-align: top;
+	width: 33.3%;
+}
+
+ul > li > a {
+	display: block;
+	width: auto;
+	text-decoration: none;
+	margin: 5px;
+}
+
+ul > li > a .screen {
+	position: relative;
+	overflow: hidden;
+}
+
+ul > li > a .screen .top {
+	position: absolute;
+	bottom: 150%;
+	left: 30px;
+	z-index: 2;
+	color: #fff;
+	font-size: 26px;
+	font-weight: 900;
+	transition: all .5s;
+}
+
+ul > li > a .screen .bottom {
+	position: absolute;
+	top: 150%;
+	left: 30px;
+	z-index: 2;
+	color: #fff;
+	font-size: 16px;
+	transition: all .5s;
+}
+
+ul > li > a .screen img {
+	width: 100%;
+}
+
+ul > li > a h3 {
+	font-size: 14px;
+	text-align: center;
+	padding: 20px;
+	color: #666;
+}
+
+ul > li > a .screen::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 95%;
+	background: rgba(0,0,0,.5);
+	z-index: 1;
+	opacity: 0;
+	transition: all .5s;
+}
+
+ul > li > a:hover .screen::after {
+	opacity: 1;
+}
+
+ul > li > a:hover .top {bottom: 52%;}
+
+ul > li > a:hover .bottom {top: 52%}
