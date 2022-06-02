@@ -1,0 +1,106 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bgv-id {
+    max-height: 100vh;
+    height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.iconList {
+    margin-top: 100px;
+    letter-spacing: 40px;
+    margin-bottom: 50px;
+}
+
+.icon {
+    filter: brightness(0.5) invert(0.7);
+    width: 50px;
+    height: 50px;
+}
+
+.icon:hover {
+    filter: brightness(1) invert(1);
+}
+
+.bg-text {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.bg-text h1 {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-size: 64px;
+    color: rgb(68, 31, 1);
+}
+
+.bg-text .info {
+    margin-top: 80px;
+    font-size: 12px;
+    color: rgba(155, 151, 147);
+    letter-spacing: 1px;
+}
+
+.bg-text p span {
+    color: rgb(68, 31, 1);
+    font-weight: 700;
+}
+
+.message {
+    margin-top: -30px;
+    margin-bottom: 60px;
+    font-size : 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.btn{
+    font-family: 'rubik';
+    font-style: italic;
+    letter-spacing: 5px;
+    background-color:rgba(155, 151, 147, 0.5);
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: rgb(68, 31, 1,0);
+    padding: 25px 50px;
+    text-decoration-line: none;
+    font-size: 30px;
+    color:  rgba(255, 255, 255, 0.5);
+}
+
+.btn:hover{
+    background-color: rgba(155, 151, 147, 0.7);
+    color: rgb(68, 31, 1);
+  }
+
+.btn:visited {
+    color: rgb(68, 31, 0.7);
+    text-decoration-line: none;
+}
+
+@media(max-width: 100%) {
+    .bgv-id{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+.copyright {
+    margin-top: 120px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
