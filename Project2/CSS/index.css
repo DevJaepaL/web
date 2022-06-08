@@ -92,12 +92,12 @@ body {
     text-decoration-line: none;
 }
 
-@media(max-width: 100%) {
+/*@media(max-width: 100%) {
     .bgv-id{
         padding-right: 1rem;
         padding-left: 1rem;
     }
-}
+}*/
 
 .copyright {
     margin-top: 120px;
