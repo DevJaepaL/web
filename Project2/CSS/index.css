@@ -9,7 +9,7 @@ body {
 
 .bgv-id {
     max-height: 100vh;
-    height: 100vh;
+    /* height: 100vh; */
     max-width: 100%;
     width: 100%;
     margin: auto;
