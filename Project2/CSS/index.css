@@ -59,7 +59,7 @@ h1 {
       width: 100%;
     }
   }
-
+  
   h2 {
     font-size: 1.3em;
     min-width:11px;
@@ -87,6 +87,12 @@ h1 {
   }
 
 
+  .copyright{
+    color: ;
+    top:10%;
+    width: 100%;
+
+  }
 /* 사이드 메뉴 부분 */
 .fa-2x {
 font-size: 5em;
@@ -208,6 +214,12 @@ nav.main-menu li.active>a,
 color:#fff;
 background-color:rgba(252, 118, 7, 0.693);
 }
+
+.main-menu>ul.logout {
+  position:absolute;
+  left:0;
+  bottom:0;
+  }
 
 .area {
 float: left;
