@@ -1,3 +1,4 @@
+/* 백그라운드 및 아이콘 부분 */
 html,body,header {
     font-family: 'Cormorant Garamond', serif;
     font-family: 'IBM Plex Sans KR', sans-serif;
@@ -6,12 +7,14 @@ html,body,header {
     font-size: 1rem;
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 99%;
     width: 100%;
+    letter-spacing: -0.04em;
 }
 
 .bgv-id {
     top: 0;
+    bottom: 0;
     left: 0;
     height: 100vh;
     width: 100%;
@@ -20,79 +23,194 @@ html,body,header {
     display:inline-block;
 }
 
-.iconList {
-    margin-top: 7vmin;
-    letter-spacing: 40px;
-    margin-bottom: 50px;
-}
 
-.icon {
-    filter: brightness(0.5) invert(0.7);
-    width: 50px;
-    height: 50px;
-}
+h1 {
+    font-size: 2.1em;
+    min-width:11px;
+    white-space: nowrap;
+    margin: 0;
+    position: fixed;
+    color: transparent;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+  
 
-.icon:hover {
-    filter: brightness(1) invert(1);
-}
-
-.bg-text {
-    top: 20%;
-    width: 100%;
+  h1::before {
+    content: "Welcome to My Profile Web Page !";
     position: absolute;
-    text-align: center;
-    color: #ffffff;
-}
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+    border-right: 1px solid black;
+    animation: typing 3.5s steps(40);
+  }
+  
+  @keyframes typing{
+    0% {
+      width: 0%;
+    }
 
-.bg-text h1 {
-    font-family: 'Rubik';
-    font-style: italic;
-    font-size: 4em;
-    color: rgb(68, 31, 1);
-    margin-bottom: 10vmin;
-}
-
-.bg-text p span {
-    color: rgb(68, 31, 1);
-    font-weight: 700;
-}
-
-.message {
-    margin-top: 1vmin;
-    margin-bottom: 5vmin;
-    font-size : 1.3em;
-    letter-spacing: 0.01em;
-    font-weight: 500;
-}
-
-.btn{
-    font-family: 'rubik';
-    font-style: italic;
-    letter-spacing: 0.1em;
-    background-color:rgba(155, 151, 147, 0.5);
-    border: 1px solid;
-    border-radius: 0.6em;
-    border-color: rgb(68, 31, 1,0);
-    padding: 25px 50px;
-    text-decoration-line: none;
-    font-size: 30px;
-    color:  rgba(255, 255, 255, 0.5);
-    margin-top: 10vmin;
-}
-
-.btn:hover{
-    background-color: rgba(155, 151, 147, 0.7);
-    color: rgb(68, 31, 1);
+    100% {
+      width: 100%;
+    }
   }
 
-.btn:visited {
-    color: rgb(68, 31, 0.7);
-    text-decoration-line: none;
+  h2 {
+    font-size: 1.3em;
+    min-width:11px;
+    white-space: nowrap;
+    margin: 0;
+    position: fixed;
+    color: transparent;
+    top:60%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h2::before {
+    content: "You can check My Information Through the Left Sidebar.";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+    letter-spacing: -0.01;
+    border-right: 1px solid black;
+    animation: typing 3.5s steps(50);
+  }
+
+
+/* 사이드 메뉴 부분 */
+.fa-2x {
+font-size: 5em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
 }
 
 
-.bg-text > .copyright {
-    margin-top: 15vmin;
-    font-size: 1em;
-    color: rgba(255,255,255,0.7);
+.main-menu:hover,nav.main-menu.expanded {
+width:220px;
+overflow:visible;
+}
+
+.main-menu {
+background: rgba(0, 0, 0, 0.15);;
+border-right:1px solid rgba(0, 0, 0, 0.01);;
+position:absolute;
+top:0;
+bottom:0;
+height:100vh;
+left:0;
+width:45px;
+overflow:hidden;
+-webkit-transition:width .23s linear;
+transition:width .23s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:220px;
+margin-bottom: 25px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:rgba(0, 0, 0, 1);
+font-weight: 700;
+font-family: 'Rubik';
+font-size: 1.1em;
+letter-spacing: -0.04em;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all 0.35s linear;
+transition:all 0.35s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+padding-top: 5px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:200px;
+  font-family: 'Rubik';
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,
+nav.main-menu li.active>a,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:rgba(252, 118, 7, 0.693);
+}
+
+.area {
+float: left;
+background: rgba(155, 151, 147, 0.5);
+height: 100%;
 }

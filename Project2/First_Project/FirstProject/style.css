@@ -1,0 +1,389 @@
+body {
+	font-family: 'IBM Plex Sans KR';
+	text-indent: 1em;
+	text-align: center;
+	letter-spacing: -0.5px;
+}
+
+section {
+	text-align: center;
+}
+
+.menubar {
+	display: flex;
+	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	align-items: center;
+}
+
+.menubar > nav {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.menubar > nav > a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	padding: 30px 30px;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.menubar > nav > a:hover {
+	color: black;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+hr {
+	border: 2px solid ;
+	width: 50%;
+	margin-bottom: 60px;
+}
+
+.#hr2 {
+	border: 2px solid;
+	width: 10%;
+}
+
+#eng1 {
+	line-height: 5px;
+	font-size: 3em;
+}
+
+#div_box1 {
+	line-height: 60px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 16px;
+}
+
+.div_box3 {
+	border: 1px solid;
+	width: 350px;
+	height: 150px;
+	margin: 40px;
+	display: inline-block;
+}
+
+.div_border1 {
+	border: 4px solid;
+	border-radius: 120px;
+	margin: 100px;
+	padding: 50px;
+}
+
+#human {
+	width: 250px;
+	height: 250px;
+}
+
+#div_box2 {
+	color: gray;
+	font-size: 18px;
+}
+
+#list_1 {
+	list-style-type: none;
+	text-align: left;
+	font-size: 15px;
+}
+
+.div_bg {
+	display: inline-block;
+	background-image: url(imgs/korea_1.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 90%;
+	height: 250px;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	padding-top: 150px;
+	object-fit: cover;
+}
+
+.div_img1 {
+	display: inline-block;
+	background-image: url(imgs/korea_2.jpg);
+	background-size: cover;
+	object-fit: cover;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.div_img2 {
+	display: inline-block;
+	background-image: url(imgs/korea_3.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.div_img3 {
+	display: inline-block;
+	background-image: url(imgs/korea_4.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+.div_img4 {
+	display: inline-block;
+	background-image: url(imgs/korea_5.jpg);
+	background-size: cover;
+	width: 70%;
+	height: 300px;
+	color: white;
+	vertical-align: bottom;
+	line-height: 300px;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.div_img5 {
+	display: inline-block;
+	background-image: url(imgs/korea_6.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	color: white;
+	vertical-align: bottom;
+	line-height: 300px;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.div_bg1 {
+	display: inline-block;
+	background-image: url(imgs/japan_1.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 90%;
+	height: 250px;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	padding-top: 150px;
+}
+
+
+.jp_img1 {
+	display: inline-block;
+	background-image: url(imgs/japan_3.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.jp_img2 {
+	display: inline-block;
+	background-image: url(imgs/japan_4.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.jp_img3 {
+	display: inline-block;
+	background-image: url(imgs/japan_5.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	color: white;
+	line-height: 300px;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+.jp_img4 {
+	display: inline-block;
+	background-image: url(imgs/japan_6.jpg);
+	background-size: cover;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.jp_img5 {
+	display: inline-block;
+	background-image: url(imgs/japan_7.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.div_bg2 {
+	display: inline-block;
+	background-image: url(imgs/hw_1.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 90%;
+	height: 250px;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	padding-top: 150px;
+}
+
+
+.hw_img1 {
+	display: inline-block;
+	background-image: url(imgs/hw_2.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.hw_img2 {
+	display: inline-block;
+	background-image: url(imgs/hw_3.jpg);
+	background-color: #0005;
+	background-size: cover;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.hw_img3 {
+	display: inline-block;
+	background-image: url(imgs/hw_4.jpg);
+	background-color: #0005;
+	background-size: cover;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+.hw_img4 {
+	display: inline-block;
+	background-image: url(imgs/hw_5.jpg);
+	background-color: #0005;
+	background-size: cover;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.hw_img5 {
+	display: inline-block;
+	background-image: url(imgs/hw_7.jpg);
+	background-color: #0005;
+	background-size: cover;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	z-index: 1;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.profile {
+	width: 100%;
+	height: 20%;
+	margin-top: px;
+	background-color: rgba(255, 255, 255, 0.9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile > img {
+	width: 300px;
+	height: 300px;
+	border-radius: 20%;
+}
