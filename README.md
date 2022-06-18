@@ -8,7 +8,8 @@
 <hr>
 
 + <a href="https://devjaepal.github.io/web/FirstProject/index.html"> 첫번째 개인 프로젝트(github page 이용)</a>
-  
++ <a href="https://devjaepal.github.io/web/Project2/index.html"> 두번째 개인 프로젝트(github page 이용)</a>
+
 <hr>
 
 #### 하고 싶은 거 ( 생각나면 추가 예정 )
