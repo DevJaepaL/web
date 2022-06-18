@@ -5,25 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="JavaScript/indexJS.js"></script>
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300&family=IBM+Plex+Sans+KR:wght@100;200;300;700&family=Rubik:ital,wght@0,300;0,700;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="Media/titleicon.jpg">
     <title>JC WEB</title>
 </head>
-<body>
+<!-- 백그라운드 영상 출력 -->
+<body onload="init()">
     <header class="background-header">
         <div class="bgv-id">
-            <video src="Media/index_road.mp4" autoplay loop muted></video>
+            <video id="bg-video" src="" autoplay loop muted>
+        </video>
         </div>
         <div>
                 <!-- 애니메이션 출력 -->
                 <h1>Welcome to My Profile Web Page !</h1>
-                <h2>You can check My Information Through the Left Sidebar.</h2>
+                <h2>왼쪽 사이드 메뉴를 통해, 저의 대한 정보를 확인할 수 있어요.</h2>
                 <p class="copyright">
                     Copyright © 2022 Lee Jae Chan Ltd. All rights reserved.
                 </p>
+                <a id="button"  href="#">
+                    <img width="40px" height="40px" 
+                    src="Media/down_arrow.png" alt="arrow">
+                </a>
             </div>
         </div>
     </header>
@@ -96,12 +104,12 @@
                 </a>
             </li>
         </ul>              
-        <ul class="logout">
+        <ul class="bottom_project">
             <li>
                <a href="First_Project/FirstProject/index.html">
                      <i class="fa fa-power-off fa-2x"></i>
                     <span class="nav-text">
-                        First Project >
+                        첫 번째 프로젝트 >
                     </span>
                 </a>
             </li>  

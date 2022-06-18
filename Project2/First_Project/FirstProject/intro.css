@@ -21,7 +21,7 @@ section {
 .menubar {
 	display: flex;
 	background-color: #ffffff;
-	background-color: rgba(138, 135, 135, 0.9);
+	background-color: rgba(138, 135, 135, 0.5);
 	position: fixed;
 	top: 0;
 	width: 100%;

@@ -1,6 +1,6 @@
-/* 백그라운드 및 아이콘 부분 */
+/* 기본 설정 */
 html,body,header {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Nanum Myeongjo', serif;
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-family: 'Rubik', sans-serif;
     line-height: 1.5;
@@ -12,6 +12,7 @@ html,body,header {
     letter-spacing: -0.04em;
 }
 
+/* 페이지 꽉차게 하는 설정 */
 .bgv-id {
     top: 0;
     bottom: 0;
@@ -23,14 +24,56 @@ html,body,header {
     display:inline-block;
 }
 
+/* copyright 텍스트 부분 */
+.copyright{
+  font-family: 'Rubik', serif;
+  color: gray;
+  font-weight: 700;
+  top:95%;
+  left: 77%;
+  position: fixed;
+  width: 100%;
+}
 
+/* 페이지 아래 버튼 부분 */
+#button {
+  top: 92%;
+  left: 50%;
+  align-items: center;
+  position: absolute;
+  animation: jump 1s infinite;
+  animation-delay: 0.5s;
+  transition: 0.7s;
+}
+
+#button:hover {
+  transition: 0.7s;
+  filter: brightness(0) invert(1);
+}
+
+@keyframes jump{
+  0% {
+    top:94%;
+  }
+
+  50%{
+    top:92%;
+  }
+
+  100%{
+    top:94%;
+  }
+}
+
+/* 타이틀 텍스트 애니메이션 출력 부분 */
 h1 {
+    font-family: 'Nanum Myeongjo';
     font-size: 2.1em;
     min-width:11px;
     white-space: nowrap;
     margin: 0;
     position: fixed;
-    color: rgb(0,0,0,0.1);
+    color: rgb(255,255,255,0.3);
     top:35%;
     left:50%;
     transform: translate(-50%, -50%);
@@ -44,9 +87,9 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    color: rgb(47, 31, 16);
+    color: rgb(255, 255, 255);
     overflow: hidden;
-    border-right: 1px solid rgb(0,0,0,0.5);
+    border-right: 1px solid rgb(255,255,255,0.6);
     animation: typing 3.5s steps(40);
   }
   
@@ -61,41 +104,34 @@ h1 {
   }
   
   h2 {
+    font-family: 'Nanum Myeongjo';
     font-size: 1.3em;
+    font-weight: bold;
     min-width:11px;
     white-space: nowrap;
     margin: 0;
     position: fixed;
-    color: rgb(0,0,0,0.1);
-    top:45%;
+    color: rgb(255,255,255,0);
+    top:50%;
     left:50%;
     transform: translate(-50%, -50%);
   }
 
   h2::before {
-    content: "You can check My Information Through the Left Sidebar.";
+    content: "왼쪽 사이드 메뉴를 통해, 저의 대한 정보를 확인할 수 있어요.";
     position: absolute;
+    font-weight: bold;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    color: rgb(5, 10, 5);
+    color: rgb(255, 255, 255);
     overflow: hidden;
     letter-spacing: -0.01;
-    border-right: 1px solid rgb(0,0,0,0.5);
+    border-right: 1px solid rgb(255,255,255,0.6);
     animation: typing 3.5s steps(50);
   }
 
-
-  .copyright{
-    color: gray;
-    font-weight: 700;
-    top:90%;
-    left: 40%;
-    position: fixed;
-    width: 100%;
-
-  }
 /* 사이드 메뉴 부분 */
 .fa-2x {
 font-size: 5em;
@@ -117,7 +153,7 @@ overflow:visible;
 }
 
 .main-menu {
-background: rgba(0, 0, 0, 0.15);;
+background: rgba(101, 101, 101, 0.3);;
 border-right:1px solid rgba(0, 0, 0, 0.01);;
 position:absolute;
 top:0;
@@ -148,10 +184,10 @@ position:relative;
 display:table;
 border-collapse:collapse;
 border-spacing:0;
-color:rgba(0, 0, 0, 1);
-font-weight: 700;
-font-family: 'Rubik';
-font-size: 1.1em;
+color:rgb(255, 255, 255,0.7);
+font-weight: 600;
+font-family: 'IBM Sans Plex KR';
+font-size: 1em;
 letter-spacing: -0.04em;
 text-decoration:none;
 -webkit-transform:translateZ(0) scale(1,1);
@@ -169,6 +205,7 @@ text-align:center;
 vertical-align:middle;
 font-size:18px;
 padding-top: 5px;
+filter: brightness(0) invert(1);
 }
 
 .main-menu .nav-text {
@@ -176,7 +213,8 @@ position:relative;
 display:table-cell;
 vertical-align:middle;
 width:200px;
-  font-family: 'Rubik';
+  font-family: 'IBM Sans Plex KR';
+  font-weight: 700;
 }
 
 .no-touch .scrollable.hover {
@@ -214,15 +252,17 @@ nav.main-menu li.active>a,
 .dropdown-menu>.active>a:focus,
 .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
 .dashboard-page nav.dashboard-menu ul li.active a {
-color:#fff;
-background-color:rgba(252, 118, 7, 0.693);
+color:rgb(255, 255, 255);
+background-color:rgba(140, 255, 0, 0.693);
 }
 
-.main-menu>ul.logout {
+.main-menu>ul.bottom_project {
   position:absolute;
   left:0;
   bottom:0;
   }
+
+
 
 .area {
 float: left;
