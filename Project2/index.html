@@ -16,18 +16,19 @@
 </head>
 <!-- 백그라운드 영상 출력 -->
 <body onload="init()">
-    <header class="background-header">
+    <header class="background-header" onmousewheel="wheelDown(event,this)">
         <div class="bgv-id">
             <video id="bg-video" src="" autoplay loop muted>
         </video>
         </div>
         <div>
+                <p class="timer"></p>
                 <!-- 애니메이션 출력 -->
                 <h1>Welcome to My Profile Web Page !</h1>
                 <h2>왼쪽 사이드 메뉴를 통해, 저의 대한 정보를 확인할 수 있어요.</h2>
-                <p class="copyright">
+                <!-- <p class="copyright">
                     Copyright © 2022 Lee Jae Chan Ltd. All rights reserved.
-                </p>
+                </p> -->
                 <a id="button"  href="#">
                     <img width="40px" height="40px" 
                     src="Media/down_arrow.png" alt="arrow">

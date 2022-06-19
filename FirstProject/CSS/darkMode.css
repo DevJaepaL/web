@@ -1,0 +1,553 @@
+*{
+	scroll-behavior: smooth;
+	line-height: 30px;
+	letter-spacing: -1px;
+	color: rgb(255,255,255,0.87);
+}
+
+.index-bg{ background: rgba(0,0,0,0.87); }
+
+/* 한국 영화 백그라운드 컬러 */
+.kr-bg{ background: rgba(0,0,0,0.85); }
+
+/* 일본 영화 백그라운드 컬러 */
+.jp-bg{ background: rgba(0,0,0,0.85) }
+
+/* 미국 영화 백그라운드 컬러 */
+.us-bg{ background: rgba(0,0,0,0.85); }
+
+body {
+	font-family: 'IBM Plex Sans KR';
+	text-indent: 1em;
+	text-align: center;
+	letter-spacing: -0.5px;
+}
+
+section {
+	text-align: center;
+}
+
+footer {
+	margin: 0;
+	bottom: 0;
+}
+#lightModeToggle {
+	display:block;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 130px;
+	font-weight: 300;
+	padding-right: 15px;
+	left: 30px;
+	transition: background-color .5s, opacity .5s;
+	z-index: 1000;
+  }
+  #lightModeToggle::after {
+	content: "\f185";
+	font-family: 'FontAwesome';
+	align-items: center;
+	text-align: center;
+	font-size: 35px;
+	line-height: 60px;
+	color: #000000;
+  }
+
+  #lightModeToggle:hover {
+	cursor: pointer;
+	background-color: rgba(255, 251, 0,0.8);
+  }
+
+/* 다크 모드 토글 */
+#darkModeToggle {
+	display:block;
+	background-color: rgba(189, 189, 189, 0.1);
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 50px;
+	padding-right: 10px;
+	left: 30px;
+	transition: background-color .5s, opacity .5s;
+	z-index: 1000;
+  }
+  #darkModeToggle::after {
+	content: "\f186";
+	font-family: 'FontAwesome';
+	align-items: center;
+	text-align: center;
+	font-size: 40px;
+	line-height: 60px;
+	color: #fff;
+  }
+
+  #darkModeToggle:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 1);
+  }
+
+/* 스크롤 위 버튼 CSS */
+#scrollButtonTop {
+	display: inline-block;
+	background-color: rgba(255,255,255,0.5);
+	width: 50px;
+	height: 50px;
+	padding-right: 15px;
+	align-items: center;
+	text-align: center;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 90px;
+	right: 30px;
+	transition: background-color .5s, opacity .5s;
+	z-index: 1000;
+  }
+  #scrollButtonTop::after {
+	content: "\f077";
+	font-family: 'FontAwesome';
+	align-items: center;
+	text-align: center;
+	font-size: 2em;
+	line-height: 45px;
+	color: #000000;
+  }
+
+  #scrollButtonTop:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255);
+  }
+
+
+/* 스크롤 아래 버튼 CSS */
+
+  #scrollButtonDown {
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 50px;
+	height: 50px;
+	padding-right: 15px;
+	align-items: center;
+	text-align: center;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .5s, opacity .5s;
+	z-index: 1000;
+  }
+  #scrollButtonDown::after {
+	content: "\f078";
+	font-family: 'FontAwesome';
+	align-items: center;
+	text-align: center;
+	font-size: 2em;
+	line-height: 45px;
+	color: #000000;
+  }
+  #scrollButtonDown:hover {
+	cursor: pointer;
+	background-color: rgba(255,255,255);
+  }
+
+
+/* 메뉴바 부분 */
+  .menubar {
+	display: flex;
+	background-color: rgba(99, 93, 93, 0.6);
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	left: 0;
+	top: 0;
+	align-items: center;
+}
+
+.menubar > nav {
+	display: inline-block;
+	margin: auto;
+}
+
+.menubar > nav > a > img {
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0;
+	align-items: center;
+	transition: 0.25s;
+}
+
+.menubar > nav > a > #ui { 	filter: brightness(0) invert(0.8); }
+
+.menubar > nav > a > img:hover {
+	width: 45px;
+	height: 45px;
+}
+
+.img-list a img {
+	width: 100px;
+	height: 100px;
+}
+
+.review-img {
+	width: 200px;
+	height: 200px;
+}
+
+hr {
+	border: 2px solid ;
+	width: 50%;
+	margin-bottom: 60px;
+}
+
+.main_img{ 
+	width: 300px; 
+	height: 300px;
+}
+
+.hr2 {
+	margin-left: auto;
+}
+
+
+#eng1 {
+	line-height: 5px;
+	font-size: 3em;
+}
+
+#div_box1 {
+	line-height: 60px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 16px;
+}
+
+.div_box3 {
+	border: 1px solid;
+	width: 350px;
+	height: 150px;
+	margin: 40px;
+	display: inline-block;
+}
+
+.div_border1 {
+	border: 4px solid;
+	border-radius: 120px;
+	margin: 100px;
+	padding: 50px;
+}
+
+#human {
+	width: 250px;
+	height: 250px;
+}
+
+#div_box2 {
+	margin: 0px;
+	background-color: rgba(138, 135, 135, 0.3);
+	color: rgb(0,0,0);
+	font-size: 18px;
+}
+
+#list_1 {
+	list-style-type: none;
+	text-align: left;
+	font-size: 15px;
+}
+
+.div_bg {
+	display: inline-block;
+	background-image: url(../imgs/korea_1.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 90%;
+	height: 250px;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	padding-top: 150px;
+	object-fit: cover;
+}
+
+.div_img1 {
+	display: inline-block;
+	background-image: url(../imgs/korea_2.jpg);
+	background-size: cover;
+	object-fit: cover;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.div_img2 {
+	display: inline-block;
+	background-image: url(../imgs/korea_3.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.div_img3 {
+	display: inline-block;
+	background-image: url(../imgs/korea_4.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+.div_img4 {
+	display: inline-block;
+	background-image: url(../imgs/korea_5.jpg);
+	background-size: cover;
+	width: 70%;
+	height: 300px;
+	color: white;
+	vertical-align: bottom;
+	line-height: 300px;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.div_img5 {
+	display: inline-block;
+	background-image: url(../imgs/korea_6.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	color: white;
+	vertical-align: bottom;
+	line-height: 300px;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.div_bg1 {
+	display: inline-block;
+	background-image: url(../imgs/japan_1.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 90%;
+	height: 250px;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	padding-top: 150px;
+}
+
+
+.jp_img1 {
+	display: inline-block;
+	background-image: url(../imgs/japan_3.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.jp_img2 {
+	display: inline-block;
+	background-image: url(../imgs/japan_4.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.jp_img3 {
+	display: inline-block;
+	background-image: url(../imgs/japan_5.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	color: white;
+	line-height: 300px;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+.jp_img4 {
+	display: inline-block;
+	background-image: url(../imgs/japan_6.jpg);
+	background-size: cover;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.jp_img5 {
+	display: inline-block;
+	background-image: url(../imgs/japan_7.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.div_bg2 {
+	display: inline-block;
+	background-image: url(../imgs/hw_1.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 90%;
+	height: 250px;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	padding-top: 150px;
+}
+
+
+.hw_img1 {
+	display: inline-block;
+	background-image: url(../imgs/hw_2.jpg);
+	background-size: cover;
+	background-color: #0005;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.hw_img2 {
+	display: inline-block;
+	background-image: url(../imgs/hw_3.jpg);
+	background-color: #0005;
+	background-size: cover;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.hw_img3 {
+	display: inline-block;
+	background-image: url(../imgs/hw_4.jpg);
+	background-color: #0005;
+	background-size: cover;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+.hw_img4 {
+	display: inline-block;
+	background-image: url(../imgs/hw_5.jpg);
+	background-color: #0005;
+	background-size: cover;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.hw_img5 {
+	display: inline-block;
+	background-image: url(../imgs/hw_7.jpg);
+	background-color: #0005;
+	background-size: cover;
+	background-blend-mode: darken;
+	width: 70%;
+	height: 300px;
+	line-height: 300px;
+	z-index: 1;
+	color: white;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-top: 150px;
+}
+
+.profile {
+	width: 100%;
+	height: 20%;
+	margin-top: px;
+	background-color: rgba(255, 255, 255, 0.9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile > img {
+	width: 300px;
+	height: 300px;
+	border-radius: 20%;
+}

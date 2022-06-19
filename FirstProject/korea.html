@@ -7,25 +7,34 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" id="changeUI" href="CSS/style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" type="image/x-icon" href="imgs/titleicon.png">
+	<script type="text/javascript" src="JavaScript/main.js"></script>
 </head>
-<body>
+<!-- 상단 메뉴바 -->
+<header>
 	<section>
 		<div class="menubar">
-			<nav><a href="../../index.html">Return</a></nav>
-			<nav><a href="intro.html">My INFO</a></nav>
-			<nav><a href="index.html">Home</a></nav>
-			<nav><a href="korea.html">Korea Movie</a></nav>
-			<nav><a href="japan.html">Japan Movie</a></nav>
-			<nav><a href="hollywood.html">Hollywood Movie</a></nav>			
+			<nav><a href="../Project2/index.html"><img id="ui" src="imgs/return.png" alt=""></a></nav>
+			<nav><a href="intro.html"><img id="ui" src="imgs/info.png" alt=""></a></nav>
+			<nav><a href="index.html"><img id="ui" src="imgs/home.png" alt=""></a></nav>
+			<nav><a href="korea.html"><img src="imgs/koreaflag.png" alt=""></a></nav>
+			<nav><a href="japan.html"><img src="imgs/japanflag.png" alt=""></a></nav>
+			<nav><a href="hollywood.html"><img src="imgs/ameflag.png" alt=""></a></nav>			
 		</div>
 	</section>
+<body onload="init()" class="kr-bg">
+	<!-- 토글 부분 -->
+	<a id="lightModeToggle"></a>
+	<a id="darkModeToggle"></a>
+	<a id="scrollButtonTop"></a>
+	<a id="scrollButtonDown"></a>
 	<div class="div_bg">
 		<h2><p>한국 영화</h2>
 			<h4>Best 5</h4>
 		</div>
-		<img src="imgs/movie_2.png">
+		<img src="imgs/movie_2.png" width="350px" height="350px">
 		<h2 style="margin-bottom: 60px;">한국 영화의 발전</h2>
 		<div style="font-size: 18px; margin-bottom: 60px;">
 			한국영화는 2000년대까지만 해도, 스크린 쿼터라는 보호 장벽이 없으면 한국 영화는,<br>
@@ -47,7 +56,7 @@
 		</div>
 		<h2 style="color: royalblue;"><b>" 너와 나의 계절이 같았다면 " </b></h2>
 		<hr id="hr2">
-		<p style="margin-bottom:80px">
+		<p style="margin-bottom:120px; line-height: 30px;">
 			제작된지 20년이 훌쩍 넘은 작품인 "봄날은 간다" 입니다. <br>
 			명대사인 <span style="color: royalblue; font-weight: 700;">"라면 먹고 갈래요 ?"</span>는 모르는 사람이 없을겁니다. <br>
 			배경은 90년도에 저가 태어나지도 않은 그 시대만의 감성에, <br>
@@ -56,7 +65,7 @@
 		<p style="font-size: 18px; font-weight:700; margin-bottom: 30px;">
 			나의 한줄평 
 		</p>
-		<img src="imgs/review.png">
+		<img class="review-img" src="imgs/review.png">
 		<p style="font-size: 24px; font-weight:700; margin-bottom: 120px;">
 			' 20년 넘은 영화인데도 전혀 촌스럽지않 애틋한 설렘과 괜히 내가 주인공이 된 기분. '
 		</p>
@@ -72,7 +81,7 @@
 		<p style="margin-bottom: 60px">출연 : 이정재 , 최민식 , 황정민 , 박성웅 등</p>
 		<h2 style="color: red;"><b>" 죽기 딱 좋은 날씨네. " </b></h2>
 		<hr id="hr2">
-		<p style="margin-bottom:120px">
+		<p style="margin-bottom:120px; line-height:30px;">
 			2013년에 개봉한 느와르 영화입니다. <br>
 			영화의 장르도 그렇고 민감한 주제인 "조직폭력배"를 다루기 때문에 호불호가 많이 갈리지만, <br>
 			영화의 몰입감 , 배우들의 명연기만큼은 누구나 인정하는 작품입니다. <br>
@@ -82,7 +91,7 @@
 		<p style="font-size: 18px; font-weight:700; margin-bottom: 30px;">
 			나의 한줄평 
 		</p>
-		<img src="imgs/review.png">
+		<img class="review-img" src="imgs/review.png">
 		<p style="font-size: 24px; font-weight:700; margin-bottom: 120px;">
 			' 느와르 영화를 보고싶다 ! 그러면 신세계는 필수코스  '
 		</p>
@@ -100,7 +109,7 @@
 			그 냄새가 십리 밖까지 진동을 하는 법이여. "
 		</b></h2>
 		<hr id="hr2">
-		<p style="margin-bottom:120px">
+		<p style="margin-bottom:120px; line-height:30px;">
 			한국영화의 대표적인 감독인 봉준호 님의 작품입니다. 장르는 스릴러이긴 하지만, <br>
 			기존의 클리셰를 깨고 코미디 , 사회풍자까지 연출을 하는 것에 굉장히 놀라웠습니다. <br>
 			또한 당시 한국영화의 연출방식은 CG를 그다지 사용하지 않았는데 이 작품은 스토리 뿐만 아니라 <br>
@@ -111,7 +120,7 @@
 		<p style="font-size: 18px; font-weight:700; margin-bottom: 30px;">
 			나의 한줄평 
 		</p>
-		<img src="imgs/review.png">
+		<img class="review-img" src="imgs/review.png">
 		<p style="font-size: 24px; font-weight:700; margin-bottom: 120px;">
 			'  어렸을 때 본 괴물의 무서움은 아직까지도 기억에 남는다..  '
 		</p>
@@ -129,7 +138,7 @@
 			과 선배는 김진모 그는 네 사촌 "
 		</b></h2>
 		<hr id="hr2">
-		<p style="margin-bottom:120px">
+		<p style="margin-bottom:120px; line-height:30px;">
 			제가 선택한 2위 작품도 봉준호 감독님의 작품입니다. 기생충은 굉장히 유명한 작품인데요. <br>
 			권위있는 칸 영화제에서 황금종려상을 수상하며 <br>
 			한국 뿐만 아니라 전 세계적으로 인정받은 작품입니다. <br>
@@ -140,7 +149,7 @@
 		<p style="font-size: 18px; font-weight:700; margin-bottom: 30px;">
 			나의 한줄평 
 		</p>
-		<img src="imgs/review.png">
+		<img class="review-img" src="imgs/review.png">
 		<p style="font-size: 24px; font-weight:700; margin-bottom: 120px;">
 			' 전혀 예측이 되지않는 스토리 , 보고나서 해석하는 재미가 있다. '
 		</p>
@@ -159,7 +168,7 @@
 				울어라 , 너 혼자 울 것이다. "
 			</b></h2>
 			<hr id="hr2">
-			<p style="margin-bottom:120px">
+			<p style="margin-bottom:120px; line-height:30px;">
 				대망의 1위인 올드보이 입니다. <br>
 				충격적인 촬영 기법, 스토리, 들으면 누구나 아! 하는 OST, 잘못하면 논란이 될수도 있는 소재이지만,<br>
 				감안 하더라도 한국 영화 역사에 길이남을 작품이라고 생각합니다. 그리스 신화중 하나인 "오이디푸스 신화"를 <br>
@@ -170,7 +179,7 @@
 			<p style="font-size: 18px; font-weight:700; margin-bottom: 30px;">
 				나의 한줄평 
 			</p>
-			<img src="imgs/review.png">
+			<img class="review-img" src="imgs/review.png">
 			<p style="font-size: 24px; font-weight:700; margin-bottom: 120px;">
 				' 보는 내내 감탄밖에 안나오는, 보고나면 충격밖에 안남는 '
 			</p>
@@ -186,4 +195,12 @@
 			<a href="japan.html"><img id="human" src="imgs/japan.png" alt="일본"></a>
 			<a href="hollywood.html"><img id="human" src="imgs/american.png" alt="서양"></a>
 		</body>
+		<footer id="div_box2">
+			<h4 style="font-size:17px; text-align: left;">참고 및 출처 자료</h4>
+			<ul id="list_1">	
+				<li>나무위키</li>
+				<li>네이버 영화 리뷰</li>
+				<li>Noun Project</li>
+				<li>Google image</li>
+			</ul>
 		</html>
