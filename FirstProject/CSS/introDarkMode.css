@@ -1,0 +1,346 @@
+* {
+	font-family: 'IBM Plex Sans KR';
+	text-indent: 1em;
+	text-align: center;
+	letter-spacing: -1px;
+	scroll-behavior: smooth;
+	color: rgb(255,255,255,0.87);
+}
+
+/* 백그라운드 색상 CSS */
+body{ background: rgb(0,0,0,0.87); }
+
+/* 라이트모드 토글 */
+#lightModeToggle {
+	display:block;
+	background-color: rgba(27, 27, 9, 0.1);
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 130px;
+	font-weight: 300;
+	padding-right: 15px;
+	left: 30px;
+	transition: background-color .5s, opacity .5s;
+	z-index: 1000;
+  }
+  #lightModeToggle::after {
+	content: "\f0eb";
+	font-family: 'FontAwesome';
+	align-items: center;
+	text-align: center;
+	font-size: 35px;
+	line-height: 60px;
+	color: #000000;
+  }
+
+  #lightModeToggle:hover {
+	cursor: pointer;
+	background-color: rgba(255, 251, 0,0.8);
+  }
+
+
+#lightModeToggle {
+	display:block;
+	background-color: rgba(255, 251, 0, 0.1);
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 130px;
+	font-weight: 300;
+	padding-right: 15px;
+	left: 30px;
+	transition: background-color .5s, opacity .5s;
+	z-index: 1000;
+  }
+  #lightModeToggle::after {
+	content: "\f0eb";
+	font-family: 'FontAwesome';
+	align-items: center;
+	text-align: center;
+	font-size: 35px;
+	line-height: 60px;
+	color: #000000;
+  }
+
+  #lightModeToggle:hover {
+	cursor: pointer;
+	background-color: rgba(255, 251, 0,0.8);
+  }
+
+/* 다크 모드 토글 */
+#darkModeToggle {
+	display:block;
+	background-color: rgba(0, 0, 0, 1);
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 50px;
+	padding-right: 10px;
+	left: 30px;
+	transition: background-color .5s, opacity .5s;
+	z-index: 1000;
+  }
+  #darkModeToggle::after {
+	content: "\f186";
+	font-family: 'FontAwesome';
+	align-items: center;
+	text-align: center;
+	font-size: 40px;
+	line-height: 60px;
+	color: #fff;
+  }
+
+  #darkModeToggle:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 1);
+  }
+
+/* 스크롤 위 버튼 CSS */
+#scrollButtonTop {
+	display: inline-block;
+	background-color: rgba(255,255,255,0.5);
+	width: 50px;
+	height: 50px;
+	padding-right: 15px;
+	align-items: center;
+	text-align: center;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 90px;
+	right: 30px;
+	transition: background-color .5s, opacity .5s;
+	z-index: 1000;
+  }
+  #scrollButtonTop::after {
+	content: "\f077";
+	font-family: 'FontAwesome';
+	align-items: center;
+	text-align: center;
+	font-size: 2em;
+	line-height: 45px;
+	color: #000000;
+  }
+
+  #scrollButtonTop:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255);
+  }
+
+
+/* 스크롤 아래 버튼 CSS */
+
+  #scrollButtonDown {
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 50px;
+	height: 50px;
+	padding-right: 15px;
+	align-items: center;
+	text-align: center;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .5s, opacity .5s;
+	z-index: 1000;
+  }
+  #scrollButtonDown::after {
+	content: "\f078";
+	font-family: 'FontAwesome';
+	align-items: center;
+	text-align: center;
+	font-size: 2em;
+	line-height: 45px;
+	color: #000000;
+  }
+  #scrollButtonDown:hover {
+	cursor: pointer;
+	background-color: rgba(255,255,255);
+  }
+
+
+/* 메뉴바 부분 */
+  .menubar {
+	display: flex;
+	background-color: rgba(99, 93, 93, 0.6);
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	left: 0;
+	top: 0;
+	align-items: center;
+}
+
+.menubar > nav {
+	display: inline-block;
+	margin: auto;
+}
+
+.menubar > nav > a > img {
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0;
+	align-items: center;
+	transition: 0.25s;
+}
+
+.menubar > nav > a > #ui { 	filter: brightness(0) invert(0.8); }
+
+.menubar > nav > a > img:hover {
+	width: 45px;
+	height: 45px;
+}
+
+h1 { font-size: 40px; }
+
+hr { 
+	border: 2px solid;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	width: 40%; 
+}
+
+section {
+	text-align: center;
+}
+
+
+/* 프로필 이미지 부분 */
+.profile > img {
+	margin-top: 100px;
+	width: 300px;
+	height: 300px;
+	border-radius: 20%;
+}
+
+/* 프로필 텍스트 부분 */
+.textinfo p {
+	line-height: 60px;
+	font-size: 1.2em;
+}
+
+.profile_Box {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	padding: 40px;
+	border: 2px solid gray;
+	border-radius: 10%;
+}
+
+
+/* 좋아하는 리스트 CSS 애니메이션 부분 */
+.favoriteList {
+	max-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+ul {font-size: 0;}
+
+ul > li {
+	display: inline-block;
+	vertical-align: top;
+	width: 33.3%;
+}
+
+ul > li > a {
+	display: block;
+	width: auto;
+	text-decoration: none;
+	margin: 5px;
+}
+
+ul > li > a .screen {
+	position: relative;
+	overflow: hidden;
+}
+
+ul > li > a .screen .top {
+	position: absolute;
+	bottom: 150%;
+	left: 30px;
+	z-index: 2;
+	color: #fff;
+	font-size: 26px;
+	font-weight: 900;
+	transition: all .5s;
+}
+
+ul > li > a .screen .bottom {
+	position: absolute;
+	top: 150%;
+	left: 30px;
+	z-index: 2;
+	color: #fff;
+	font-size: 16px;
+	transition: all .5s;
+}
+
+ul > li > a .screen img {
+	width: 100%;
+}
+
+ul > li > a h3 {
+	font-size: 14px;
+	text-align: center;
+	padding: 20px;
+	color: #666;
+}
+
+ul > li > a .screen::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	z-index: 1;
+	opacity: 0;
+	transition: all .5s;
+}
+
+ul > li > a:hover .screen::after {
+	opacity: 1;
+}
+
+ul > li > a:hover .top {bottom: 52%;}
+
+ul > li > a:hover .bottom {top: 52%}
+
+#scrollButton {
+	display: inline-block;
+	background-color: rgb(52, 145, 208,0.7);
+	width: 50px;
+	height: 50px;
+	padding-right: 15px;
+	align-items: center;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .5s, opacity .5s;
+	z-index: 1000;
+  }
+  #scrollButton::after {
+	content: "\f077";
+	font-family: 'FontAwesome';
+	align-items: center;
+	text-align: center;
+	font-size: 2em;
+	line-height: 45px;
+	color: #fff;
+  }
+  #scrollButton:hover {
+	cursor: pointer;
+	background-color: rgb(52, 145, 208,1);
+  }

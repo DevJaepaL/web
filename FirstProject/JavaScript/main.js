@@ -22,7 +22,7 @@ function init(){
         if(currentCSS){
             currentCSS.href = ('CSS/darkMode.css');
         }
-    })
+    });
 
     // 라이트모드 토글 부분 변수 및 함수 선언
     let lightToggle = document.getElementById("lightModeToggle");

@@ -33,7 +33,7 @@ footer {
 }
 #lightModeToggle {
 	display:block;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 251, 0, 0.1);
 	width: 60px;
 	height: 60px;
 	border-radius: 50px;
@@ -46,7 +46,7 @@ footer {
 	z-index: 1000;
   }
   #lightModeToggle::after {
-	content: "\f185";
+	content: "\f0eb";
 	font-family: 'FontAwesome';
 	align-items: center;
 	text-align: center;
@@ -63,7 +63,7 @@ footer {
 /* 다크 모드 토글 */
 #darkModeToggle {
 	display:block;
-	background-color: rgba(189, 189, 189, 0.1);
+	background-color: rgba(0, 0, 0, 1);
 	width: 60px;
 	height: 60px;
 	border-radius: 50px;

@@ -4,16 +4,16 @@
 	letter-spacing: -1px;
 }
 
-.index-bg{ background: rgba(216, 242, 247, 0.6); }
+.index-bg{ background: rgba(136, 140, 141, 0.8); }
 
 /* 한국 영화 백그라운드 컬러 */
-.kr-bg{ background: rgba(102, 159, 169, 0.4); }
+.kr-bg{ background: rgba(90, 167, 181, 0.4); }
 
 /* 일본 영화 백그라운드 컬러 */
-.jp-bg{ background: rgba(171, 144, 141, 0.1); }
+.jp-bg{ background: rgba(193, 199, 124, 0.505); }
 
 /* 미국 영화 백그라운드 컬러 */
-.us-bg{ background: rgba(50, 147, 167, 0.5); }
+.us-bg{ background: rgba(71, 235, 159, 0.304); }
 
 body {
 	font-family: 'IBM Plex Sans KR';
@@ -33,7 +33,7 @@ footer {
 /* 라이트모드 토글 */
 #lightModeToggle {
 	display:block;
-	background-color: rgba(27, 27, 9, 0.3);
+	background-color: rgba(27, 27, 9, 0.1);
 	width: 60px;
 	height: 60px;
 	border-radius: 50px;
@@ -46,7 +46,7 @@ footer {
 	z-index: 1000;
   }
   #lightModeToggle::after {
-	content: "\f185";
+	content: "\f0eb";
 	font-family: 'FontAwesome';
 	align-items: center;
 	text-align: center;
@@ -63,7 +63,7 @@ footer {
 /* 다크모드 토글 */
 #darkModeToggle {
 	display:block;
-	background-color: rgba(0, 0, 0,0.6);
+	background-color: rgba(0, 0, 0,0.5);
 	width: 60px;
 	height: 60px;
 	border-radius: 50px;
