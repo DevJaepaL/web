@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 <hr>
 
-+ <a href="https://devjaepal.github.io/web/FirstProject/index.html"> 첫번째 개인 프로젝트(github page 이용)</a>
++ <a href="https://devjaepal.github.io/web/FirstProject/index.html"> 첫번째 개인 프로젝트(github page 이용) 초기 디자인 수정 (22-06-25)</a>
 + <a href="https://devjaepal.github.io/web/Project2/index.html"> 두번째 개인 프로젝트(github page 이용)</a>
 
 <hr>
